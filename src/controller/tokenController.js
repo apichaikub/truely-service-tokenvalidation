@@ -12,6 +12,7 @@ class userController {
       res.success({
         userId: req.user.id,
         role: req.user.role,
+        scopes: req.user.scopes || [],
       })
     } catch (error) {
       res.status(error.code || 500).fail(error.message)
