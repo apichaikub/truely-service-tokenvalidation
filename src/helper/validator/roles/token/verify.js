@@ -1,3 +1,4 @@
 export default {
-  access_token: 'required|string',
+  accessToken: 'required|string',
+  tokenType: 'required|string',
 }
