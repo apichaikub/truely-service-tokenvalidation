@@ -10,8 +10,8 @@ class userController {
     try {
       // TODO: add service to cache access token, if we have compact logic or query data in db.
       res.success({
-        userId: req.user.id,
-        role: req.user.role,
+        userId: req.user.id || null,
+        role: req.user.role || null,
         scopes: req.user.scopes || [],
       })
     } catch (error) {
